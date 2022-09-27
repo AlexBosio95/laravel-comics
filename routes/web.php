@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
-});
+    $arrayDisc = config('comics');
+    $arrayMenu = config('navList');
+
+    return view('homepage', ['discs' => $arrayDisc, 'menuItems' => $arrayMenu]);
+})->name('home');

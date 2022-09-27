@@ -1,0 +1,30 @@
+@import '/resources/sass/variables/variables.scss';
+
+header{
+
+    img{
+        height: 4.1rem;
+    }
+    
+    ul{
+        list-style: none;
+        padding: 0;
+            li{
+                margin: 0.5rem;
+                cursor: pointer;
+                position: relative;
+            }
+            .nav-mark{
+                position: absolute;
+                top: 57px;
+                left: 0;
+                height: 5px;
+                width: 100%;
+                background-color: $colorPrimary;
+            }
+    }
+    
+    .active{
+        color: $colorPrimary;
+    }
+}

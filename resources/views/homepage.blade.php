@@ -1,5 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-sono il main
+    @foreach ($discs as $disc)
+        {{ $disc['title'] }}
+    @endforeach
 @endsection
