@@ -26,11 +26,11 @@ header .active {
   color: #0282f9;
 }
 
-.ms_container {
+.mj_container {
   background-color: #1c1c1c;
 }
 
-.ms_container img {
+.mj_container img {
   height: 20rem;
   width: 100%;
   -o-object-fit: cover;
@@ -39,7 +39,7 @@ header .active {
      object-position: top;
 }
 
-.ms_container h5 {
+.mj_container .btn-series {
   color: #ffffff;
   background-color: #0282f9;
   padding: 0.7rem 1.6rem;
@@ -48,19 +48,19 @@ header .active {
   text-transform: uppercase;
 }
 
-.ms_container .cards-container {
+.mj_container .cards-container {
   padding: 2rem 0rem;
   display: flex;
   flex-wrap: wrap;
 }
 
-.ms_container .cards-container .ms_card {
+.mj_container .cards-container .ms_card {
   width: calc(16.6666666667% - 1rem);
   margin: 2rem 0.5rem;
   cursor: pointer;
 }
 
-.ms_container .cards-container .ms_card img {
+.mj_container .cards-container .ms_card img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
@@ -69,21 +69,84 @@ header .active {
      object-position: top;
 }
 
-.ms_container .cards-container .ms_card img:hover {
+.mj_container .cards-container .ms_card img:hover {
   transform: scale(1.05);
   transition: 0.5s;
 }
 
-.ms_container .btn-more {
+.mj_container .btn-more {
   color: #ffffff;
   background-color: #0282f9;
   padding: 0.7rem 1.6rem;
   border: none;
 }
 
-.ms_container .text-card {
+.mj_container .text-card {
   margin: 0.2rem 0.2rem;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+footer .ms_container {
+  background-color: #303030;
+}
+
+footer .ms_container .container {
+  padding: 2.5rem 0rem;
+}
+
+footer .ms_container button {
+  background-color: #303030;
+  padding: 1rem;
+  color: #ffffff;
+  border: 1.5px solid #0282f9;
+}
+
+footer .social-link {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+footer .social-link h5 {
+  text-transform: uppercase;
+  color: #0282f9;
+}
+
+footer .social-link img {
+  margin: 0px 5px;
+}
+
+footer .col ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer .col ul li {
+  color: #797979;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+footer .col ul li:hover {
+  color: #ffffff;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.bg-cover {
+  background-image: url("/public/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image {
+  background-image: url("/public/images/dc-logo-bg.png");
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 

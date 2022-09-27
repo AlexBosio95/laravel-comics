@@ -1,5 +1,5 @@
 <header>
-    <div class="container mt-3">
+    <div class="container my-3">
         <div class="row row-cols-2 align-items-center">
             <div class="col-3">
                 <img src="{{asset('images/dc-logo.png')}}" alt="dc logo">

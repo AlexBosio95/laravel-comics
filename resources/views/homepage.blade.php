@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="ms_container mt-4">
+<div class="mj_container">
         <div class="container position-relative wrapper-cards">
             <div class="cards-container">
                     @foreach ($discs as $disc)

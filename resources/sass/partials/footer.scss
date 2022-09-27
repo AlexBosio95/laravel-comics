@@ -1,0 +1,70 @@
+footer{
+        .ms_container{
+            background-color: $footerColor;
+        
+            .container{
+                padding: 2.5rem 0rem;
+
+            }
+        
+            button{
+                background-color: $footerColor;
+                padding: 1rem;
+                color: $textColor;
+                border: 1.5px solid $colorPrimary;
+            }
+        }
+        
+        .social-link{
+            display: flex;
+            flex-direction: row-reverse;
+        
+        h5{
+            text-transform: uppercase;
+            color: $colorPrimary;
+        }
+
+        
+        img{
+            margin: 0px 5px;
+        }
+    }
+
+    .col ul{
+        padding: 0;
+        list-style-type: none;
+    
+        li{
+            color: $colorLink;
+            margin: 10px 0px;
+            cursor: pointer;
+    
+            &:hover{
+            color: $textColor;
+        }
+        }
+    
+        
+    }
+    
+    h4{
+            text-transform: uppercase;
+            color: $textColor;
+        }
+    
+        
+}
+
+.bg-cover{
+    background-image: url('/public/images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image {
+    background-image: url('/public/images/dc-logo-bg.png');
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

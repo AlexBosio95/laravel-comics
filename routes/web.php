@@ -16,6 +16,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $arrayDisc = config('comics');
     $arrayMenu = config('navList');
+    $arrayLink = config('linkDcComics');
 
-    return view('homepage', ['discs' => $arrayDisc, 'menuItems' => $arrayMenu]);
+    $LinkDC = [];
+    $LinkShopList = [];
+    $LinkUtility = [];
+    $LinkSite = [];
+
+    foreach ($arrayLink as $value) {
+        if ($value['list'] == 'DcComics') {
+            $LinkDC[] = $value;
+        } elseif ($value['list'] == 'ShopList'){
+            $LinkShopList[] = $value;
+        } elseif ($value['list'] == 'utility'){
+            $LinkUtility[] = $value;
+        } elseif ($value['list'] == 'site'){
+            $LinkSite[] = $value;
+        }
+    }
+
+
+    return view('homepage', ['discs' => $arrayDisc, 'menuItems' => $arrayMenu ,'LinkDC' => $LinkDC, 'LinkShopList' => $LinkShopList, 'LinkUtility' => $LinkUtility, 'LinkSite' => $LinkSite] );
 })->name('home');
