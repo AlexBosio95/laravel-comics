@@ -17,6 +17,7 @@ Route::get('/', function () {
     $arrayDisc = config('comics');
     $arrayMenu = config('navList');
     $arrayLink = config('linkDcComics');
+    $arrayProduct = config('productList');
 
     $LinkDC = [];
     $LinkShopList = [];
@@ -36,5 +37,5 @@ Route::get('/', function () {
     }
 
 
-    return view('homepage', ['discs' => $arrayDisc, 'menuItems' => $arrayMenu ,'LinkDC' => $LinkDC, 'LinkShopList' => $LinkShopList, 'LinkUtility' => $LinkUtility, 'LinkSite' => $LinkSite] );
+    return view('homepage', ['discs' => $arrayDisc, 'menuItems' => $arrayMenu ,'LinkDC' => $LinkDC, 'LinkShopList' => $LinkShopList, 'LinkUtility' => $LinkUtility, 'LinkSite' => $LinkSite, 'Products' => $arrayProduct] );
 })->name('home');

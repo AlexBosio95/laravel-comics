@@ -26,6 +26,69 @@ header .active {
   color: #0282f9;
 }
 
+footer .ms_container {
+  background-color: #303030;
+}
+
+footer .ms_container .container {
+  padding: 2.5rem 0rem;
+}
+
+footer .ms_container button {
+  background-color: #303030;
+  padding: 1rem;
+  color: #ffffff;
+  border: 1.5px solid #0282f9;
+}
+
+footer .social-link {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+footer .social-link h5 {
+  text-transform: uppercase;
+  color: #0282f9;
+}
+
+footer .social-link img {
+  margin: 0px 5px;
+}
+
+footer .col ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer .col ul li {
+  color: #797979;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+footer .col ul li:hover {
+  color: #ffffff;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.bg-cover {
+  background-image: url("/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image {
+  background-image: url("/images/dc-logo-bg.png");
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .mj_container {
   background-color: #1c1c1c;
 }
@@ -87,66 +150,29 @@ header .active {
   text-transform: uppercase;
 }
 
-footer .ms_container {
-  background-color: #303030;
+main .my_container {
+  background-color: #0282f9;
+  width: 100%;
 }
 
-footer .ms_container .container {
-  padding: 2.5rem 0rem;
+main .my_container img {
+  height: 3.5rem;
+  margin-right: 0.5rem;
 }
 
-footer .ms_container button {
-  background-color: #303030;
-  padding: 1rem;
-  color: #ffffff;
-  border: 1.5px solid #0282f9;
-}
-
-footer .social-link {
+main .my_container .products {
   display: flex;
-  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
 }
 
-footer .social-link h5 {
-  text-transform: uppercase;
-  color: #0282f9;
+main .my_container .products .product {
+  width: 20%;
+  display: flex;
+  align-items: center;
 }
 
-footer .social-link img {
-  margin: 0px 5px;
-}
-
-footer .col ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-footer .col ul li {
-  color: #797979;
-  margin: 10px 0px;
-  cursor: pointer;
-}
-
-footer .col ul li:hover {
+main .my_container span {
   color: #ffffff;
-}
-
-footer h4 {
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.bg-cover {
-  background-image: url("/public/images/footer-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.image {
-  background-image: url("/public/images/dc-logo-bg.png");
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 

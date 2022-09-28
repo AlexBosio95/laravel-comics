@@ -1,0 +1,28 @@
+main{
+
+    .my_container{
+        background-color: $colorPrimary;
+        width: 100%;
+        
+        img{
+            height: 3.5rem;
+            margin-right: 0.5rem;
+        }
+        
+        .products{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .product{
+                width: calc(100% / 5);
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+        span{
+            color: $textColor;
+        }
+    }
+}
